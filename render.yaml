@@ -9,8 +9,9 @@ services:
     autoDeploy: true
 
   # 2. React (Vite) Frontend Static Site
-  - type: static
+  - type: web
     name: vardaan-frontend
+    env: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
