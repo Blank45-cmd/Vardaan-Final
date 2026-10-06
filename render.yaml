@@ -3,6 +3,7 @@ services:
   - type: web
     name: vardaan-backend
     env: python
+    rootDir: Vardan-phase-01-main/backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     plan: free
@@ -12,6 +13,7 @@ services:
   - type: web
     name: vardaan-frontend
     env: static
+    rootDir: Vardan-phase-01-main/frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     autoDeploy: true
