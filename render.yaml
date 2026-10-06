@@ -12,7 +12,6 @@ services:
   - type: web
     name: vardaan-frontend
     env: static
-    rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     autoDeploy: true
