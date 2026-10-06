@@ -1,0 +1,45 @@
+:root {
+  --bg-dark: #020907;
+  --panel-bg: rgba(10, 28, 20, 0.75);
+  --emerald-accent: #34d399;
+  --emerald-primary: #10b981;
+  --emerald-dark: #059669;
+  --border-emerald: rgba(16, 185, 129, 0.25);
+  --text-muted: #94a3b8;
+  --text-light: #f8fafc;
+}
+
+html,
+#root {
+  background-color: transparent !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Panel helper */
+.bio-panel {
+  background-color: var(--panel-bg) !important;
+  border: 1px solid var(--border-emerald) !important;
+  border-radius: 16px;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+select, input[type="text"], input[type="number"] {
+  background-color: rgba(2, 9, 7, 0.85);
+  border: 1px solid var(--emerald-dark);
+  color: var(--text-light);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+input[type="range"] {
+  accent-color: var(--emerald-accent);
+}
